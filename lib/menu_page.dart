@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_practice/counter_app.dart';
 import 'package:flutter_practice/grid_view_example.dart';
 import 'package:flutter_practice/increment.dart';
+import 'package:flutter_practice/input_widget_example.dart';
 import 'package:flutter_practice/list_view_example.dart';
 
 class MenuPage extends StatelessWidget {
@@ -50,6 +51,15 @@ class MenuPage extends StatelessWidget {
                 );
               },
               child: Text("Counter App Example"),
+            ),
+             ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => InputWidgetExample()),
+                );
+              },
+              child: Text("Input Widget Example"),
             ),
           ],
         ),
