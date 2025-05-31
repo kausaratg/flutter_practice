@@ -4,6 +4,8 @@ import 'package:flutter_practice/grid_view_example.dart';
 import 'package:flutter_practice/increment.dart';
 import 'package:flutter_practice/input_widget_example.dart';
 import 'package:flutter_practice/list_view_example.dart';
+import 'package:flutter_practice/todo_app.dart';
+import 'package:flutter_practice/todo_solution.dart';
 
 class MenuPage extends StatelessWidget {
   const MenuPage({super.key});
@@ -43,7 +45,7 @@ class MenuPage extends StatelessWidget {
               },
               child: Text("Grid View Example"),
             ),
-             ElevatedButton(
+            ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
@@ -52,7 +54,7 @@ class MenuPage extends StatelessWidget {
               },
               child: Text("Counter App Example"),
             ),
-             ElevatedButton(
+            ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
@@ -60,6 +62,24 @@ class MenuPage extends StatelessWidget {
                 );
               },
               child: Text("Input Widget Example"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => TodoApp()),
+                );
+              },
+              child: Text("Todo App Example"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => TodoSolution()),
+                );
+              },
+              child: Text("Todo App Solution"),
             ),
           ],
         ),

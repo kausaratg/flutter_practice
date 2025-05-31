@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_practice/grid_view_example.dart';
 import 'package:flutter_practice/menu_page.dart';
-
 
 void main() {
   runApp(const MyApp());
